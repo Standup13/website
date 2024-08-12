@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(115deg, rgba(124, 124, 161, 0.8), rgba(136, 136, 206, 0.7)), url(./Fondo-website.avif) center/cover no-repeat;
@@ -19,6 +21,18 @@ body {
     border-radius: 10px;
 }
 
+fieldset {
+    border: 0px;
+}
+
+.adjust, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 #title, #description {
     font-weight: bold; 
     color: white; 
@@ -30,9 +44,15 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
-    box-sizing: border-box;
+    max-width: 600px;
     text-align: left;
+}
+.flexbox {
+    display: flex;
+}
+
+#punto1, #punto2 {
+    font-weight: bold;
 }
 
 h1 {
@@ -41,8 +61,7 @@ h1 {
 
 label {
     display: flex;
-    align-items: center
-    margin-bottom: 5px;
+    align-items: center;
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -51,7 +70,6 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 input, select, textarea {
-    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -65,6 +83,8 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     padding: 15px;
+    text-align: center;
+    
 }
 
 input[type="submit"]:hover {
